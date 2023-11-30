@@ -57,6 +57,7 @@ export default function Home() {
         </Link>
       </nav>
       <div className="flex flex-col justify-center items-center bg-lime-200 flex-grow">
+        <p>👋 {session?.user.name}</p>
         <div className="w-1/2">
           <fieldset className="border border-black p-2">
             <legend className="ml-2">Choose character</legend>

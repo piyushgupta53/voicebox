@@ -45,8 +45,9 @@ export default function Home() {
       setAudioSrc(response.data.audioUrl);
     } catch (error) {
       console.error("Error converting text to speech:", error);
+    } finally {
+      setStatus("completed");
     }
-    setStatus("completed");
   };
 
   return (
